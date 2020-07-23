@@ -1,16 +1,16 @@
 let sum = 0;
 
-let N = Math.floor(+prompt ('перше число'));
+let N = Math.floor(+prompt ('перше число',''));
  while(isNaN(N) || !N || !Number.isInteger(N))
-    N = +prompt('ціле перше число');
+    N = +prompt('ціле перше число','');
      
  
-let M = Math.floor(+prompt ('друге число'));
+let M = Math.floor(+prompt ('друге число',''));
  while(isNaN(M) || N>=M || !M || !Number.isInteger(M))
-       M = +prompt('ціле друге число більше ніж перше число');
+       M = +prompt('ціле друге число більше ніж перше число' ,'');
 
  
-let skipNumbers = confirm ('пропускаємо парні числа ? Ок-(Так) Скасувати -(Ні)');
+let skipNumbers = confirm ('пропускаємо парні числа ? Ок-(Так) Скасувати -(Ні)','');
 
   while ( N <= M )
 {
